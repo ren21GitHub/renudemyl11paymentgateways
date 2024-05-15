@@ -45,8 +45,8 @@
                                         </button>
                                     </form>
                                 </div>
-                                {{-- <div class="col-md-4 my-2">
-                                    <form action="" method="POST">
+                                <div class="col-md-4 my-2">
+                                    <form action="{{route('stripe.payment')}}" method="POST">
                                         @csrf
                                         <input type="hidden" value="40" name="price">
                                         <button type="submit" class="btn btn-outline-dark flex-shrink-0" type="button">
@@ -55,7 +55,7 @@
                                         </button>
                                     </form>
                                 </div>
-                                <div class="col-md-4 my-2">
+                                {{-- <div class="col-md-4 my-2">
                                     <form action="" method="POST">
                                         @csrf
                                         <script src="https://checkout.razorpay.com/v1/checkout.js"
