@@ -55,7 +55,7 @@
                                         </button>
                                     </form>
                                 </div>
-                                {{-- <div class="col-md-4 my-2">
+                                <div class="col-md-4 my-2">
                                     <form action="" method="POST">
                                         @csrf
                                         <script src="https://checkout.razorpay.com/v1/checkout.js"
@@ -78,7 +78,7 @@
                                 </div>
 
                                 <div class="col-md-6 my-2">
-                                    <form action="" method="POST">
+                                    <form action="{{route('instamojo.payment')}}" method="POST">
                                         @csrf
                                         <input type="hidden" name="price" value="3700">
                                         <button type="submit" class="btn btn-outline-dark flex-shrink-0">
@@ -111,7 +111,7 @@
                                             Buy With Ssscommerz
                                         </button>
                                       </form>
-                                </div> --}}
+                                </div>
                             </div>
 
                     </div>
