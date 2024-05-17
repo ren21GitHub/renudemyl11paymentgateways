@@ -9,6 +9,7 @@
         "intervention/image": "^3.6",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
+        "mollie/laravel-mollie": "^3.0",
         "razorpay/razorpay": "2.*",
         "srmklive/paypal": "~3.0",
         "stripe/stripe-php": "^14.6"

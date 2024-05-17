@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Gateways\InstamojoController;
+use App\Http\Controllers\Gateways\MollieController;
 use App\Http\Controllers\Gateways\PaypalController;
 use App\Http\Controllers\Gateways\RazorpayController;
 use App\Http\Controllers\Gateways\StripeController;
@@ -30,3 +31,7 @@ Route::get('razorpay/cancel', [RazorpayController::class, 'cancel'])->name('razo
 Route::post('instamojo/payment', [InstamojoController::class, 'payment'])->name('instamojo.payment');
 Route::get('instamojo/callback', [InstamojoController::class, 'callback'])->name('instamojo.callback');
 Route::get('instamojo/cancel', [InstamojoController::class, 'cancel'])->name('instamojo.cancel');
+
+// Mollie Gateways
+Route::post('mollie/payment', [MollieController::class, 'payment'])->name('mollie.payment');
+Route::get('mollie/success', [MollieController::class, 'success'])->name('mollie.success');
