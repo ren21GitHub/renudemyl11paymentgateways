@@ -53,6 +53,8 @@
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; <a href="https://websolutionus.com/">websolutionus</a> {{date('Y')}}</p></div>
         </footer>
+
+        @yield('script')
         <!-- Bootstrap core JS-->
         {{-- <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script> --}}
 

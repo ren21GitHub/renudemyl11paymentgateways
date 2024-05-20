@@ -3,6 +3,7 @@
 use App\Http\Controllers\Gateways\InstamojoController;
 use App\Http\Controllers\Gateways\MollieController;
 use App\Http\Controllers\Gateways\PaypalController;
+use App\Http\Controllers\Gateways\PaystackController;
 use App\Http\Controllers\Gateways\RazorpayController;
 use App\Http\Controllers\Gateways\StripeController;
 use Illuminate\Support\Facades\Route;
@@ -35,3 +36,7 @@ Route::get('instamojo/cancel', [InstamojoController::class, 'cancel'])->name('in
 // Mollie Gateways
 Route::post('mollie/payment', [MollieController::class, 'payment'])->name('mollie.payment');
 Route::get('mollie/success', [MollieController::class, 'success'])->name('mollie.success');
+
+// Paystack Gateways
+Route::get('paystack/redirect', [PaystackController::class, 'paystackredirect'])->name('paystack.redirect');
+Route::get('paystack/callback', [PaystackController::class, 'paystackVerifyTransaction'])->name('paystack.callback');
